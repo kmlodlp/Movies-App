@@ -1,10 +1,10 @@
 import React from 'react'
-import { Stylesheet, Text, View, TouchableNativeFeedback, Alert, Flatlist, Image } from 'react-native';
-import { useEffect } from "../hooks/useFetch";
+import { StyleSheet, Text, View, TouchableNativeFeedback, Alert, FlatList, Image } from 'react-native';
+import { useFetch } from '../hooks/useFetch'
 
-export const Movieslist = ({ url, page }) => {
+export const MoviesList = ({ url, page }) => {
 
-    const { data, isLoading, errors } = useEffect(url, page)
+    const { data, isLoading, errors } = useFetch(url, page)
     const Item = ({ title, overview, image }) => (
         <TouchableNativeFeedback onPress={(event) => { watchDetail(title, overview) }}>
             <View styls={styles.item}>
@@ -13,7 +13,7 @@ export const Movieslist = ({ url, page }) => {
                 <Image
                     style={styles.image}
                     source={{
-                        uri: 'https://image.tmdb.org/t/p/w500/${image}'
+                        uri: `https://image.tmdb.org/t/p/w500/${image}`
                     }}
                 />
             </View>

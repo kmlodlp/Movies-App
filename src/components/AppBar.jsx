@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-import { Link} from 'react-router-native'
+import { Link } from 'react-router-native'
 export const AppBar=()=>{
     const AppBarTab=( {active, children, to} )=>{
         return (
@@ -18,7 +18,7 @@ export const AppBar=()=>{
     )
 }
 
-const styles = StyleSheet.created({
+const styles = StyleSheet.create({
     AppBar:{
         backgroundColor: '#000',
         paddingVertical: 5,
@@ -28,7 +28,7 @@ const styles = StyleSheet.created({
     },
     AppTittle:{
         color:'#fff',
-        paddingHorizontakl: 5
+        paddingHorizontal: 5
     },
     link:{
         borderColor:'#fff',

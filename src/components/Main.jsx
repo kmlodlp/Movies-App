@@ -5,6 +5,7 @@ import { UpComing} from"../views/UpComing";
 import { TopRated } from "../views/TopRated";
 import { View, StyleSheet } from "react-native";
 import { Routes, Route } from "react-router-native";
+
 export const Main = () => {
 return (
 <View style={styles.container}>
