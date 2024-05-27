@@ -57,11 +57,12 @@ export const MoviesList = ({ url, page }) => {
             marginBottom: 5,
             color: '#fff',
             fontSize: 20,
-            textAling: 'center'
+            alignItems: 'center',
+            textAlign: 'center',
         },
         image: {
-            with: '100%',
-            height: 450
+            width: '100%',
+            height: 450,
         }
     });
 
